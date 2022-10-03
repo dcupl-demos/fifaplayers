@@ -1,0 +1,266 @@
+{
+    "key": "fifaPlayers",
+    "autoGenerateKey": true,
+    "references": [],
+    "properties": [
+        {
+            "key": "Name",
+            "type": "string",
+            "filter":true
+        },
+        {
+            "key": "Nationality",
+            "type": "string",
+            "filter":true
+        },
+        {
+            "key": "National_Position",
+            "type": "string",
+            "filter":true
+        },
+        {
+            "key": "National_Kit",
+            "type":"int",
+            "filter":true
+        },
+        {
+            "key": "Club",
+            "type": "string",
+            "filter":true
+        },
+        {
+            "key": "Club_Position",
+            "type": "string",
+            "filter":true
+        },
+        {
+            "key": "Club_Kit",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Club_Joining",
+            "type": "string"
+        },
+        {
+            "key": "Rating",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Height",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Weight",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Preferred_Foot",
+            "type": "string",
+            "filter":true
+        },
+        {
+            "key": "Birth_Date",
+            "type": "date",
+            "filter":true
+        },
+        {
+            "key": "Age",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Preffered_Position",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Work_Rate",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Weak_foot",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Skill_Moves",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Ball_Control",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Dribbling",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Marking",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Sliding_Tackle",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Standing_Tackle",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Aggression",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Reactions",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Attacking_Position",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Interceptions",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Vision",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Composure",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Crossing",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Short_Pass",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Long_Pass",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Acceleration",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Speed",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Stamina",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Strength",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Balance",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Agility",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Jumping",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Heading",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Shot_Power",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Finishing",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Long_Shots",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Curve",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Freekick_Accuracy",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Penalties",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "Volleys",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "GK_Positioning",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "GK_Diving",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "GK_Kicking",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "GK_Handling",
+            "type": "int",
+            "filter":true
+        },
+        {
+            "key": "GK_Reflexes",
+            "type": "int",
+            "filter":true
+        }
+    ]
+}
