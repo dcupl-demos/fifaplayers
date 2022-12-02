@@ -1,17 +1,25 @@
 {
     "key": "fifaPlayers",
+    "meta": {
+        "name": "FIFA Players",
+        "description": "List of FIFA players based on the kaggle dataset - https://www.kaggle.com/datasets/sharmau0091/fifa-football-payers-dataset"
+    },
     "autoGenerateKey": true,
     "references": [],
     "properties": [
         {
             "key": "Name",
             "type": "string",
-            "filter":true
+            "filter":{
+                "comparisonType": "containsIgnoreCaseAndWhitespace"
+            }
         },
         {
             "key": "Nationality",
             "type": "string",
-            "filter":true
+            "filter":{
+                "comparisonType": "containsIgnoreCase"   
+            }
         },
         {
             "key": "National_Position",
@@ -21,7 +29,10 @@
         {
             "key": "National_Kit",
             "type":"int",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "Shirt number national team"
+            }
         },
         {
             "key": "Club",
@@ -31,12 +42,18 @@
         {
             "key": "Club_Position",
             "type": "string",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "Player's position in the club"
+            }
         },
         {
             "key": "Club_Kit",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "Shirt number club"
+            }
         },
         {
             "key": "Club_Joining",
@@ -73,14 +90,15 @@
             "filter":true
         },
         {
-            "key": "Preffered_Position",
-            "type": "int",
+            "key": "Preferred_Position",
+            "type": "string",
             "filter":true
         },
         {
             "key": "Work_Rate",
-            "type": "int",
-            "filter":true
+            "type": "string",
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Weak_foot",
@@ -90,177 +108,212 @@
         {
             "key": "Skill_Moves",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Ball_Control",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Dribbling",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Marking",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Sliding_Tackle",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Standing_Tackle",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Aggression",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Reactions",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Attacking_Position",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Interceptions",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Vision",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Composure",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Crossing",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Short_Pass",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Long_Pass",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Acceleration",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Speed",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Stamina",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Strength",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Balance",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Agility",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Jumping",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Heading",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Shot_Power",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Finishing",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Long_Shots",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Curve",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Freekick_Accuracy",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Penalties",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "Volleys",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "GK_Positioning",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "GK_Diving",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "GK_Kicking",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "GK_Handling",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         },
         {
             "key": "GK_Reflexes",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "aggregate": true
         }
     ]
 }

@@ -2,56 +2,16 @@
   "applications": [
     {
       "key": "fifa-players",
-      "description": "a list of fifa players"
-    }
-  ],
-  "environments": [
-    {
-      "key": "localhost",
-      "variables": [
-        {
-          "key": "apiUrl",
-          "value": "http://localhost:8083"
-        }
-      ]
-    },
-    {
-      "key": "dcupl-cloud",
-      "description": "Dcupl Cloud",
-      "variables": [
-        {
-          "key": "cdnBaseUrl",
-          "value": "https://cdn.dcupl.com/files/projects"
-        },
-        {
-          "key": "version",
-          "value": "draft"
-        },
-        {
-          "key": "projectId",
-          "value": "imZMrObvAQj9AfaogsDS"
-        },
-        {
-          "key": "apiUrl",
-          "value": "${cdnBaseUrl}/${projectId}/${version}"
-        }
-      ],
-      "queryParams": [
-        {
-          "key": "v",
-          "description": "Version variable for latest model cache",
-          "value": "${v}"
-        }
-      ]
+      "description": "a list of FIFA players"
     }
   ],
   "resources": [
     {
-      "url": "${apiUrl}/models/fifaplayers.dcupl.json",
+      "url": "${baseUrl}/models/fifaplayers.dcupl.json",
       "type": "model"
     },
     {
-      "url": "${apiUrl}/data/fifaplayers.csv",
+      "url": "${baseUrl}/data/fifaplayers.csv",
       "type": "data",
       "model": "fifaPlayers"
     }
