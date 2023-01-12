@@ -2,7 +2,9 @@
   "applications": [
     {
       "key": "fifa-players",
-      "description": "a list of FIFA players"
+      "description": "List of FIFA Players",
+      "name": "FIFA Players",
+      "resourceTags": []
     }
   ],
   "resources": [

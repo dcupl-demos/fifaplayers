@@ -12,6 +12,10 @@
             "type": "string",
             "filter":{
                 "comparisonType": "containsIgnoreCaseAndWhitespace"
+            },
+            "meta": {
+                "name": "Player name",
+                "description": "Full name of the football player"
             }
         },
         {
@@ -19,32 +23,46 @@
             "type": "string",
             "filter":{
                 "comparisonType": "containsIgnoreCase"   
+            },
+            "meta": {
+                "name": "Player nationality",
+                "description": "Nationality of the football player"
             }
         },
         {
             "key": "National_Position",
             "type": "string",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "National Position",
+                "description": "Position in the national team of the football player"
+            }
         },
         {
             "key": "National_Kit",
             "type":"int",
             "filter":true,
             "meta": {
-                "name": "Shirt number national team"
+                "name": "National Number",
+                "description": "Shirt number of the player in the national team"
             }
         },
         {
             "key": "Club",
             "type": "string",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "Club",
+                "description": "Current club of the player"
+            }
         },
         {
             "key": "Club_Position",
             "type": "string",
             "filter":true,
             "meta": {
-                "name": "Player's position in the club"
+                "name": "Position",
+                "description": "Player's position of the player at the club"
             }
         },
         {
@@ -52,268 +70,449 @@
             "type": "int",
             "filter":true,
             "meta": {
-                "name": "Shirt number club"
+                "name": "Club number",
+                "description": "Shirt number of the player at the club"
             }
         },
         {
             "key": "Club_Joining",
-            "type": "string"
+            "type": "string",
+            "meta": {
+                "name": "Date club joining",
+                "description": "Date, when the player joined the club"
+            }
         },
         {
             "key": "Rating",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "FIFA Rating",
+                "description": "FIFA rating of the player"
+            }
         },
         {
             "key": "Height",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "Height",
+                "description": "Height of the player in cm"
+            }
         },
         {
             "key": "Weight",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "Weight",
+                "description": "Weight of the player in kg"
+            }
         },
         {
             "key": "Preferred_Foot",
             "type": "string",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "Preferred foot",
+                "description": "Preferred foot of the player"
+            }
         },
         {
             "key": "Birth_Date",
             "type": "date",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "Birthday",
+                "description": "Birthday of the player"
+            }
         },
         {
             "key": "Age",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "Age",
+                "description": "Age of the player"
+            }
         },
         {
             "key": "Preferred_Position",
             "type": "string",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "Preferred position",
+                "description": "Preferred position of the player"
+            }
         },
         {
             "key": "Work_Rate",
             "type": "string",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Work rate",
+                "description": "Work rate of the player - offensive vs. defensive"
+            }
         },
         {
             "key": "Weak_foot",
             "type": "int",
-            "filter":true
+            "filter":true,
+            "meta": {
+                "name": "Weak foot",
+                "description": "Skill level concerning the weak foot of the player"
+            }
         },
         {
             "key": "Skill_Moves",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Skill moves",
+                "description": "Skill moves of the player"
+            }
         },
         {
             "key": "Ball_Control",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Ball control",
+                "description": "Rating of the ball control of the player"
+            }
         },
         {
             "key": "Dribbling",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Dribbling",
+                "description": "Rating of the dribbling of the player"
+            }
         },
         {
             "key": "Marking",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Marking",
+                "description": "Rating of the marking of the player"
+            }
         },
         {
             "key": "Sliding_Tackle",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Sliding tackling",
+                "description": "Rating of the sliding tackling of the player"
+            }
         },
         {
             "key": "Standing_Tackle",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Standing tackle",
+                "description": "Rating of the standing tackle of the player"
+            }
         },
         {
             "key": "Aggression",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Aggression",
+                "description": "Rating of the aggression of the player"
+            }
         },
         {
             "key": "Reactions",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Reactions",
+                "description": "Rating of the reactions of the player"
+            }
         },
         {
             "key": "Attacking_Position",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Attacking position",
+                "description": "Rating of the attacking position of the player"
+            }
         },
         {
             "key": "Interceptions",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Interceptions",
+                "description": "Rating of the interceptions of the player"
+            }
         },
         {
             "key": "Vision",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Vision",
+                "description": "Rating of the vision of the player"
+            }
         },
         {
             "key": "Composure",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Composure",
+                "description": "Rating of the composure of the player"
+            }
         },
         {
             "key": "Crossing",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Crossing",
+                "description": "Rating of the crossing of the player"
+            }
         },
         {
             "key": "Short_Pass",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Short pass",
+                "description": "Rating of the short passes of the player"
+            }
         },
         {
             "key": "Long_Pass",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Long pass",
+                "description": "Rating of the long passes of the player"
+            }
         },
         {
             "key": "Acceleration",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Acceleration",
+                "description": "Rating of the acceleration of the player"
+            }
         },
         {
             "key": "Speed",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Speed",
+                "description": "Rating of the speed of the player"
+            }
         },
         {
             "key": "Stamina",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Stamina",
+                "description": "Rating of the stamina of the player"
+            }
         },
         {
             "key": "Strength",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Strength",
+                "description": "Rating of the strength of the player"
+            }
         },
         {
             "key": "Balance",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Balance",
+                "description": "Rating of the balance of the player"
+            }
         },
         {
             "key": "Agility",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Agility",
+                "description": "Rating of the agility of the player"
+            }
         },
         {
             "key": "Jumping",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Jumping",
+                "description": "Rating of the jumping of the player"
+            }
         },
         {
             "key": "Heading",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Heading",
+                "description": "Rating of the heading of the player"
+            }
         },
         {
             "key": "Shot_Power",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Shot power",
+                "description": "Rating of the shot power of the player"
+            }
         },
         {
             "key": "Finishing",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Finishing",
+                "description": "Rating of the finishing of the player"
+            }
         },
         {
             "key": "Long_Shots",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Long shots",
+                "description": "Rating of the long shots of the player"
+            }
         },
         {
             "key": "Curve",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Curve",
+                "description": "Rating of the curve of the player"
+            }
         },
         {
             "key": "Freekick_Accuracy",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Freekick accuracy",
+                "description": "Rating of the freekick accuracy of the player"
+            }
         },
         {
             "key": "Penalties",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Penalties",
+                "description": "Rating of the penalties of the player"
+            }
         },
         {
             "key": "Volleys",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Volleys",
+                "description": "Rating of the volleys of the player"
+            }
         },
         {
             "key": "GK_Positioning",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Goalkeeper positioning",
+                "description": "Rating of the goalkeeper positioning of the player"
+            }
         },
         {
             "key": "GK_Diving",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Goalkeeper diving",
+                "description": "Rating of the goalkeeper diving of the player"
+            }
         },
         {
             "key": "GK_Kicking",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Goalkeeper kicking",
+                "description": "Rating of the goalkeeper kicking of the player"
+            }
         },
         {
             "key": "GK_Handling",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Goalkeeper handling",
+                "description": "Rating of the goalkeeper handling of the player"
+            }
         },
         {
             "key": "GK_Reflexes",
             "type": "int",
             "filter":true,
-            "aggregate": true
+            "aggregate": true,
+            "meta": {
+                "name": "Goalkeeper reflexes",
+                "description": "Rating of the goalkeeper reflexes of the player"
+            }
         }
     ]
 }
